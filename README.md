@@ -1,24 +1,15 @@
-# lagrange-tools
+# Infinite Lagrange Tools
 
-## Project setup
+Check the web at https://tctianchi.github.io/lagrange-tools/.
+
+请到这里使用：https://tctianchi.github.io/lagrange-tools/。
+
+## What's new
+
+## Dev
+
 ```
 yarn install
-```
-
-### Compiles and hot-reloads for development
-```
 yarn serve
-```
-
-### Compiles and minifies for production
-```
 yarn build
 ```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
