@@ -66,8 +66,8 @@ export default {
   computed: {
     distance() {
       try {
-        let [x1, y1] = this.beginLabel.split(',', 2)
-        let [x2, y2] = this.endLabel.split(',', 2)
+        let [x1, y1] = this.beginLabel.replace('(', '').replace(')', '').split(',', 2)
+        let [x2, y2] = this.endLabel.replace('(', '').replace(')', '').split(',', 2)
         x1 = parseInt(x1)
         y1 = parseInt(y1)
         x2 = parseInt(x2)
@@ -110,8 +110,8 @@ export default {
   },
   methods: {
     setDefaultValues() {
-      this.beginLabel = '0,0'
-      this.endLabel = '3000,3000'
+      this.beginLabel = '(0,0)'
+      this.endLabel = '(3000,3000)'
       this.speed = 4000
       const cur = new Date()
       cur.setHours(cur.getHours() + 1)
